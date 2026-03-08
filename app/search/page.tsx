@@ -97,7 +97,7 @@ function SearchResultsContent() {
             confidence_score: 0.85,
           },
         ];
-        if (query == "black long kurti") {
+        if (query == "neeli traditional long kurti") {
           setResults(dummyData1);
         } else {
           setResults(dummyData2);
