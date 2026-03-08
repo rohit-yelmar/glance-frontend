@@ -71,6 +71,24 @@ function SearchResultsContent() {
             confidence_score: 0.83,
           },
         ];
+        const dummyData3: SearchResult[] = [
+          {
+            product_id: 9867983,
+            name: "Vishudh Women Navy Blue Floral Printed Regular Pure Cotton Kurta with Palazzos",
+            price: 2149,
+            image_url:
+              "http://assets.myntassets.com/assets/images/9867983/2019/5/31/43d65352-9853-498e-95a4-be514df0be901559294212152-Vishudh--Straight-Kurta-With-Crop-Palazzo-7041559294209627-1.jpg",
+            confidence_score: 0.94,
+          },
+          {
+            product_id: 14046594,
+            name: "Libas Women Navy Blue Pure Cotton Floral Print Kurta with Palazzos & Dupatta",
+            price: 3599,
+            image_url:
+              "http://assets.myntassets.com/assets/images/14046594/2022/6/9/5fba9594-3301-4881-ba56-d56a44570e831654747998773LibasWomenNavyBluePureCottonFloralPrintKurtawithPalazzosDupa1.jpg",
+            confidence_score: 0.91,
+          },
+        ];
         const dummyData2: SearchResult[] = [
           {
             product_id: 13791594,
@@ -99,6 +117,8 @@ function SearchResultsContent() {
         ];
         if (query == "neeli traditional long kurti") {
           setResults(dummyData1);
+        } else if (query == "neeli traditional long kurti with palazzo") {
+          setResults(dummyData3);
         } else {
           setResults(dummyData2);
         }
