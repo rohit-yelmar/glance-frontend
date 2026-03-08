@@ -44,33 +44,64 @@ function SearchResultsContent() {
         // }
         await new Promise((resolve) => setTimeout(resolve, 4000));
         // const data: SearchResponse = await response.json();
-        const dummyData: SearchResult[] = [
+
+        const dummyData1: SearchResult[] = [
           {
-            product_id: 17048614,
-            name: "Khushal K Women Black Ethnic Motifs Printed Kurta with Palazzos & With Dupatta",
-            price: 5099,
+            product_id: 9867983,
+            name: "Vishudh Women Navy Blue Floral Printed Regular Pure Cotton Kurta with Palazzos",
+            price: 2149,
             image_url:
-              "http://assets.myntassets.com/assets/images/17048614/2022/2/4/b0eb9426-adf2-4802-a6b3-5dbacbc5f2511643971561167KhushalKWomenBlackEthnicMotifsAngrakhaBeadsandStonesKurtawit7.jpg",
-            confidence_score: 0.95,
+              "http://assets.myntassets.com/assets/images/9867983/2019/5/31/43d65352-9853-498e-95a4-be514df0be901559294212152-Vishudh--Straight-Kurta-With-Crop-Palazzo-7041559294209627-1.jpg",
+            confidence_score: 0.94,
           },
           {
-            product_id: 16524740,
-            name: "InWeave Women Orange Solid Kurta with Palazzos & Floral Print Dupatta",
-            price: 5899,
+            product_id: 16600750,
+            name: "AHIKA Women Teal Ethnic Motifs Yoke Design Kurta with Trousers & With Dupatta",
+            price: 3748,
             image_url:
-              "http://assets.myntassets.com/assets/images/16524740/2021/12/29/17ab2ac8-2e60-422d-9d20-2527415932361640754214931-STRAPPY-SET-IN-ORANGE-WITH-ORGANZA-DUPATTA-5961640754214349-2.jpg",
-            confidence_score: 0.88,
+              "http://assets.myntassets.com/assets/images/16600750/2021/12/23/7d7656e5-e37d-4f61-9407-98bd341ca8f91640261029836KurtaSets1.jpg",
+            confidence_score: 0.9,
           },
           {
-            product_id: 16331376,
-            name: "Anubhutee Women Navy Blue Ethnic Motifs Embroidered Thread Work Kurta with Trousers & With Dupatta",
-            price: 4899,
+            product_id: 14046594,
+            name: "Libas Women Navy Blue Pure Cotton Floral Print Kurta with Palazzos & Dupatta",
+            price: 3599,
             image_url:
-              "http://assets.myntassets.com/assets/images/16331376/2021/12/2/b8c4f90f-683c-48d2-b8ac-19891a87c0651638428628378KurtaSets1.jpg",
-            confidence_score: 0.92,
+              "http://assets.myntassets.com/assets/images/14046594/2022/6/9/5fba9594-3301-4881-ba56-d56a44570e831654747998773LibasWomenNavyBluePureCottonFloralPrintKurtawithPalazzosDupa1.jpg",
+            confidence_score: 0.83,
           },
         ];
-        setResults(dummyData);
+        const dummyData2: SearchResult[] = [
+          {
+            product_id: 13791594,
+            name: "Anouk Women Yellow & White Printed Kurta with Palazzos",
+            price: 1999,
+            image_url:
+              "http://assets.myntassets.com/assets/images/13791594/2022/2/14/5ea707f4-8491-4d1c-b520-86a1cff4c86e1644841891629-Anouk-Women-Yellow--White-Printed-Kurta-with-Palazzos-706164-1.jpg",
+            confidence_score: 0.93,
+          },
+          {
+            product_id: 15241816,
+            name: "Varanga Women Yellow & Peach-Coloured Floral Screen Printed Gotta Patti Straight Kurta",
+            price: 2799,
+            image_url:
+              "http://assets.myntassets.com/assets/images/15241816/2021/8/24/d57adb8b-e792-477a-8801-6ea570cd88ef1629800170287VarangaWomenYellowFloralPrintedKeyholeNeckThreadWorkKurta1.jpg",
+            confidence_score: 0.9,
+          },
+          {
+            product_id: 12413214,
+            name: "Varanga Women Mustard Yellow Floral Yoke Embroidered Straight Kurta",
+            price: 1999,
+            image_url:
+              "http://assets.myntassets.com/assets/images/12413214/2021/11/22/bb925efb-80d9-4cb6-838c-df86f1ba3c3e1637570416652-Varanga-Women-Mustard-Yellow-Floral-Yoke-Embroidered-Straigh-1.jpg",
+            confidence_score: 0.85,
+          },
+        ];
+        if (query == "black long kurti") {
+          setResults(dummyData1);
+        } else {
+          setResults(dummyData2);
+        }
         // setResults(data.results);
       } catch (err) {
         setError(

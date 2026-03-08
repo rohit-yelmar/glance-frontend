@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 export default function HomePage() {
   // Get first 24 products for the home page
-  const products: Product[] = productsData.slice(0, 24);
+  const products: Product[] = productsData.slice(0, 49);
 
   return (
     <div className="space-y-8">
